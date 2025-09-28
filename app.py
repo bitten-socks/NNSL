@@ -52,7 +52,7 @@ RESULTS["male"]["SOL"] = []
 RESULTS["male"]["SGC"] = []
 
 # 4. 유형 분석 및 결과 반환 API
-@app.route('/calculate', methods=['POST'])
+@app.route('/calculate', methods=['POST', 'OPTIONS'])
 def calculate():
     """사용자 답변을 받아 유형을 분석하고 결과를 JSON으로 반환합니다."""
     data = request.json
